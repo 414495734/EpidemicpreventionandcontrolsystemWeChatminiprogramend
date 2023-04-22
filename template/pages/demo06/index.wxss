@@ -1,0 +1,23 @@
+/* pages/demo06/index.wxss */
+.content{
+  width: 100%;
+  height: 100vh;
+  background-color: #068def;
+}
+.cardOne{
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+  height: 40%;
+  background-color: #fff;
+}
+
+.cardTwo{
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+  height: 15%;
+  background-color: #fff;
+}

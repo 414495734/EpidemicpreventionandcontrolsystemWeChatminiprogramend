@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/demo04/index",
+    "pages/student/index",
+    "pages/demo06/index",
+    "pages/demo05/index",
+    "pages/demo03/index",
+    "pages/index/index",
+    "pages/demo02/index",
+    "pages/demo01/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

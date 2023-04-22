@@ -1,0 +1,35 @@
+<!--pages/demo03/index.wxml-->
+
+<cu-custom isBack="{{true}}">
+	<view slot="content">晋中核酸检测(工作端)</view>
+</cu-custom>
+<view class="content" style="position:relative;"> 
+  <view class="cardOne">
+    <view class="left">
+      <text class="font">试管编号</text>
+      <input type="text" placeholder="请输入或者扫码" style="padding-left:10px;margin-top:5px;" value="" bindinput="setInput"></input>
+    </view>
+    <view class="right">
+      <image src="https://s1.aigei.com/src/img/png/7c/7c236bf9148d40a19fc06c46ca9f0772.png?imageMogr2/auto-orient/thumbnail/!234x234r/gravity/Center/crop/234x234/quality/85/&e=1735488000&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:CZutVhQmIBfXVcaPOx1F6JZ72O8=" class="img" bindtap="Scanner"></image>
+    </view>
+  </view>
+  <view class="cardTwo" wx:if="{{flag=='true'}}" wx:for="{{testInfo}}" wx:key="index">
+    <view style="padding:5xp;margin-top:5px;">
+      <text class="textRight" bindtap="toDemo04" data-index="{{item}}">添加人员></text>
+    </view>
+    <view style="padding:5px">
+      <text>
+        试 管 号:{{item}}
+      </text>
+      <text>
+        检测人数：{{number}}/20
+      </text>
+      <button style="margin-top:10px;" bindtap="sendReq" data-item="{{item}}"> 
+        提交
+      </button>
+    </view>
+  </view>
+  <view class="cardThree" style="top:100vh;position:absolute;width:100%;height:55px;">
+    <button class="btnTwo" bindtap="Scanner">扫描试管条形码</button>
+  </view>
+</view>

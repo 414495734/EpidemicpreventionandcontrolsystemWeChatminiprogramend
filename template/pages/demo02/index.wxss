@@ -1,0 +1,4 @@
+/* pages/demo01/index.wxss */
+.font{
+  margin-right: 10px;
+}

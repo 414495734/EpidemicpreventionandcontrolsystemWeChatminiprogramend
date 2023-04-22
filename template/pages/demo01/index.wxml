@@ -1,0 +1,41 @@
+<!-- 核算查询页面 -->
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+	<view slot="content">结果查询</view>
+</cu-custom>
+<view style="background-color:#f8f8f8;">
+  <image src="https://www.jzci.edu.cn/images/zhuye/head.png" class="logo"></image>
+  <view class="content">
+    <view class="text">
+      核酸结果查询
+    </view>
+    <!-- 姓名 -->
+    <view class="weui-cells weui-cells_after-title" style="margin:10px;">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="姓名"  
+        bindinput="handleUserName" style="padding-left:10px;"/>
+      </view>
+    </view>
+    <!-- 身份证号 -->
+    <view class="page-section" >
+    <view class="weui-cells weui-cells_after-title" style="margin:10px;">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="idcard" placeholder="身份证号" bindinput="handleIdentityCard" style="padding-left:10px;"/>
+      </view>
+    </view>
+    <!-- 手机号 -->1
+    <view class="page-section" style="margin:10px;">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="number" placeholder="手机号"  bindinput="handlePhone" style="padding-left:10px;"/>
+      </view>
+    </view>
+  </view>
+  <!-- 按钮 -->
+  <view class="btn">
+    <button type="primary" class="buton" style="display:inline-block;width:190px;margin:10px;background-color:#e43d30;" bindtap="getName">查询</button>
+  </view>
+  </view>
+
+
+  </view>
+</view>

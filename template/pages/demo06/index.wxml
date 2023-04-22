@@ -1,0 +1,25 @@
+<!--pages/demo06/index.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="content">晋中核酸检测(受检端)</view>
+</cu-custom>
+<view class="content" style="background: -webkit-linear-gradient(left,#048af3,#19b6ba);">
+  <view style="width:100%;height:60px;"></view>
+  <view class="cardOne">
+    <view style="margin:auto;">
+      <image src="{{imgUrl}}"></image>
+    </view>
+  </view>
+  <view class="cardTwo">
+    
+    <view>
+      <text>姓名：</text> <text>{{username}}</text>
+    </view>
+    <view>
+      <text>身份证号：</text><text>{{flag}}</text>
+    </view>
+    <view>
+      <text>手机号：</text><text>{{phone}}</text>
+    </view>
+  </view>
+  <view style="width:100%;height:30px;"></view>
+</view>

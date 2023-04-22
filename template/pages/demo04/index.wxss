@@ -1,0 +1,22 @@
+/* pages/demo04/index.wxss */
+.content{
+  background-color: rgb(223, 216, 216);
+}
+.cardOne{
+  margin-top: 10px;
+  width: 95%;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  line-height: 70px;
+}
+.cardTwo{
+  width: 95%;
+  height: 90px;
+  padding: 5px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}

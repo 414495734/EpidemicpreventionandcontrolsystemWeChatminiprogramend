@@ -1,0 +1,47 @@
+<!--pages/demo01/index.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">核酸结果</view>
+</cu-custom>
+<view wx:if="{{showIs == 'true'}}" style="background-color:#ec1d1d;width:90%;height:120px;margin:auto;box-shadow:0 0 10px #333;wxcs_style_box-shadow:0 0 20rpx #333;margin-top:30px;">
+  <view style="text-align:center;padding:10px;font-size:20px;font-weight: 600;">
+    没有您的核酸检测记录
+  </view>
+  <view style="padding: 10px;">
+    <button bindtap="toStudent">返回</button>
+  </view>
+</view>
+<view>
+  <view class="cu-timeline" wx:for="{{userInfo}}">
+    <view class="cu-item">
+      <view class="content">
+        <view class="cu-capsule radius">
+          <view class="cu-tag bg-cyan">{{item.result}}</view>
+        </view>
+        <view class="margin-top">
+          <view>
+            <text>姓名：</text>
+            <text>{{item.pupil.pname}}</text>
+          </view>
+          <view>
+            <text>证件号码：</text>
+            <text>{{item.pupil.pcard}}</text>
+          </view>
+          <view>
+            <text>采样时间：</text>
+            <text>{{item.samplingDate}}</text>
+          </view>
+          <view>
+            <text>检测时间：</text>
+            <text>{{item.checkDate}}</text>
+          </view>
+          <view>
+            <text>检测机构：</text>
+            <text>{{item.hospital.hname}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,28 @@
+<!--pages/demo04/index.wxml-->
+<cu-custom isBack="{{true}}">
+	<view slot="content">晋中核酸检测(工作端)</view>
+</cu-custom>
+<view class="content">
+  <view class="cardOne">
+    <button style="display:inline-block;padding:0;width:105px;background-color:#556df5;color:#fff;margin:10px;" bindtap="Scanner">
+      扫描二维码
+    </button>
+    <button style="display:inline-block;padding:0;width:105px;background-color:#556df5;color:#fff;margin:10px;" bindtap="son" data-number="{{itemInfo.length}}">
+      添加完成
+    </button>
+  </view>
+  <view class="cardTwo" wx:if="{{falg}}" wx:for="{{itemInfo}}" style="position: relative;">
+    <view style="margin:5px;">
+    <text>姓  名：</text><text >{{item.pname}}</text>
+    </view>
+    <view style="margin:5px;">
+      <text>身份证号：</text><text>{{item.pcard}}</text>
+    </view>
+    <view style="margin:5px;">
+    <text>手 机 号：</text><text>{{item.pphone}}</text>
+    </view>
+    <view style="position:absolute;left:77%;top: 25%;">
+      <button bindtap="deleteInfo" data-index="{{index}}" style="background-color:red;color:#fff;">删除</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+<!--pages/student/index.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="content">晋中核酸检测(受检端)</view>
+</cu-custom>
+<view class="content" style="">
+  <view class="img">
+    <image src="https://www.jzci.edu.cn/images/zhuye/head.png" class="logo"></image>
+  </view>
+  <view class="cardOne"> 
+    <button class="btn" bindtap="goDemo05">信息填写</button> 
+    <button class="btn" bindtap="toDemo02">结果查询</button>
+  </view>
+  <view class="cardTwo" wx:if="{{ieResult == 0}}">
+    <view class="viewTwo">
+      <view>
+        <text>姓 名：</text>
+        <text>{{username}}</text>
+      </view>
+      <view>
+        <text>身份证号：</text>
+        <text>{{flag}}</text>
+      </view>
+      <view>
+        <text>手机号：</text>
+        <text>{{phone}}</text>
+      </view>
+    </view>
+    <view class="viewthree">
+        <button bindtap="goToView">采样码</button>
+      </view>
+   
+  </view>
+  
+  
+</view>

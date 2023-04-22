@@ -1,0 +1,40 @@
+<cu-custom  isBack="{{true}}">
+	<view slot="content">晋中核酸检测(工作端)</view>
+</cu-custom>
+<view class="body" style="background-image: url('https://www.wxpeng.com/css/img/qxky02.png');">
+  <view class="showOne" style="text-align:center;padding:20px;color:black;font-weight:600;font-size:28px;text-shadow:0 0 1px #333;wxcs_style_text-shadow:0 0 3rpx #333;">
+    晋中核酸检测服务平台
+  </view>
+  <view class="card" style="margin-top: 30px;">
+    <view class="cardViewOne">
+        <text class="cardTextOne">采样信息</text>
+        
+    </view>
+    <view class="cardViewTwo" style="width:100%;">
+      <view style="display:inline-block;widtn:60%;">
+        <text>采样人：</text>
+      <text class="cardTextTwo" style="margin:0;">{{workUser.dname}}</text>
+      </view>
+      <view style="display:inline-block;width:40%;position:relative;right:-33%;">
+        
+      </view>
+    </view>
+    <view class="cardViewThree">
+      <view style="margin:auto;">
+        <text>采样点：</text>
+      <text class="cardTextThree">晋中信息学院</text>
+      </view>
+    </view>
+    <view class="btn">
+      <view class="imgView" style="background-color:#8cf3db;box-shadow:0 0 20rpx #333;">
+        <view class="img"  style="border:0;">
+          <image src="https://s1.chu0.com/src/img/png/37/3780052b52274c43ab933f57bdc0300d.png?imageMogr2/auto-orient/thumbnail/!234x234r/gravity/Center/crop/234x234/quality/85/&e=1735488000&token=1srnZGLKZ0Aqlz6dk7yF4SkiYf4eP-YrEOdM1sob:RgGT68byTlPDKvoGwqGjY1hCzUw=" style="width:110px;height:88px;" bindtap="toDemo03"></image>
+        </view>
+        <view class="text" style="border:0;">
+          <view style="position:absolute;top:320px;left: 153px;color:#080707;font-size:16px;font-weight:600;height:20px;">核酸采样</view>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+</view>

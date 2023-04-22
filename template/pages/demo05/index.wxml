@@ -1,0 +1,59 @@
+<!--pages/demo05/index.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="content">晋中核酸检测(受检端)</view>
+</cu-custom>
+<view class="content" style="background-color:#fff;">
+  <view style="padding:13px;border-bottom:1px solid #f1f1f1;">
+    <text style="font-size:18px;font-weight:600;">基本信息</text>
+  </view>
+  <view class="cu-form-group margin-top">
+  <view class="title">选择班级</view>
+		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+			<view class="picker">
+				{{index?picker[index]:'请选择班级'}}
+			</view>
+		</picker>
+	</view>
+  <view class="cu-form-group">
+		<view class="title">姓 名：</view>
+		<input placeholder="请输入姓名" bindinput="setUserName"></input>
+  </view>
+  <view class="cu-form-group">
+		<view class="title">身份证号：</view>
+		<input placeholder="请输入身份证号" bindinput="setFlag"></input>
+  </view>
+  <view class="cu-form-group" style="border-bottom:1px solid #f1f1f1;">
+		<view class="title">手 机 号：</view>
+		<input placeholder="请输入手机号" bindinput="setPhone"></input>
+  </view>
+  <radio-group class="block" bindchange="setRadio">
+    <view class="cu-form-group margin-top" style="border-bottom:1px solid #f1f1f1;">
+        <view class="title">是否密接：</view>
+        <view>
+          <radio class="red margin-left-sm" value="hot"></radio><text>是</text>
+				  <radio class="green margin-left-sm" value="cold"></radio><text>否</text>
+        </view>
+      </view>
+  </radio-group>
+  <!-- <view class="cu-form-group">
+		<view class="title">地址选择</view>
+		<picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+			<view class="picker">
+				{{region[0]}}，{{region[1]}}，{{region[2]}}
+			</view>
+		</picker>
+  </view> -->
+  <view class="cu-form-group">
+		<view class="title">详细地址：</view>
+		<input placeholder="请输入详细地址" bindinput="setDetail"></input>
+  </view>
+  <view class="cu-form-group">
+    <radio-group bindchange="setResult">
+      <radio value="resu"></radio>
+      <text style="color:red;">我承诺上诉填写信息准确无误。</text>
+    </radio-group>
+  </view>
+  <view class="cu-form-group" style="padding:15px;">
+    <button style="width:90%;background-color:#456578;color:#fff;" bindtap="sendReq">提交</button>
+  </view>
+</view>

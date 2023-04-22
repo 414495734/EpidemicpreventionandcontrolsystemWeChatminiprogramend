@@ -1,0 +1,73 @@
+/* pages/student/index.wxss */
+/* 图片样式 */
+.content{
+  background-size: 100% 100%;
+  height: 675px;
+  width: 100%;
+}
+.img{
+  margin: auto;
+  width: 95%;
+  text-align: center;
+}
+.img >image{
+  width: 100%;
+}
+.logo{
+  height: 73px;
+}
+.btn{
+  display: inline-block;
+  padding: 0;
+  width: 44%;
+  margin: 5px;
+}
+.cardOne{
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+  background-color: #fff;
+}
+.viewOne{
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  padding: 5px;
+  padding-left: 10px;
+  margin: 10px;
+  margin-bottom: 0;
+}
+.btnOne{
+  display: inline-block;
+    padding: 2px;
+    font-size: 12px;
+    background-color: green;
+    width: 47px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 8px;
+}
+.cardTwo{
+  background-color: #fff;
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.viewTwo{
+  display: inline-block;
+    width: 65%;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 0;  
+}
+.viewthree{
+  display: inline-block;
+  width: 20%;
+}
+.viewthree >button{
+  padding: 0;
+  background: rgb(18, 131, 236);
+  color: #fff;
+}
